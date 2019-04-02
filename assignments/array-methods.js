@@ -112,6 +112,7 @@ runners.forEach(function(currentValue){
 console.log(emailList);
 
 // Problem 2
+//get all lowercase last names
 let allLower = [];
 runners.map(function(currentValue){
     allLower.push(currentValue.last_name.toLowerCase());
@@ -119,8 +120,9 @@ runners.map(function(currentValue){
 console.log(allLower); 
 
 //Problem 3
+//get the average of all donations 
 const avg = 
 runners.reduce(function(accumulator, currentValue){
-    return accumulator+currentValue.donation/runners.length;
+    return accumulator + currentValue.donation/runners.length;
 },0);
 console.log(avg);
